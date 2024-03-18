@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>  MARVEL MERCHANDISE </title>
+    <link rel="icon" href="132.jfif">
+    <link rel="stylesheet" href="marvel.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="banner">
+       <div class="navbar">
+		<a href="data.html">
+	    <img src="132.jfif" class="logo">
+		</a>
+		<ul>
+		    <li><a href="home.html">Home</a></li>
+        	<li><a href="About_us.html">About us</a></li>
+			<li><a href="account.html">Account</a></li>
+			<div class="cart-icon">
+				<form action="view" method="get">
+				<span class="cart-count">0</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path d="M3 3h2l3.56 12.35c.16.55.69.9 1.26.9h8.36c.57 0 1.1-.35 1.26-.9L19 5H6" />
+					<circle cx="9" cy="19" r="2" />
+					<circle cx="15" cy="19" r="2" />
+				</svg>
+			</form>
+			</div>
+			
+		</ul>
+       </div>	   
+	    <div class="content">
+		    <h1> BOOK YOUR STYLES </h1><br>
+		    <p> THE OFFCIAL MARVEL MERCHANDISE WEBSITE IS HERE SO USE IT.</p><br><br>
+            <div class="icon">
+               <button type="button" ><span> </span><a href="hoodies.html">Hoodies</a></button>
+			   <button type="button"><span> </span><a href="Tshirts.htmL">T-shirts</a></button>
+            </div>
+		</div> 
+		<div class="social">
+			<li><a href="https://instagram.com/nikhil___kumar___06?igshid=YmMyMTA2M2Y="><img src="img5.jfif"></a></li>
+			<li><a href="#"><img src="img6.jfif"></a></li>
+			<li><a href="#"><img src="img7.jfif"></a></li>
+		</div>
+	</div>
+	<div class="contact" style="color:black">
+		<div class="contact1">
+			<br><br>
+			<h2>For any Queries Contact to below:</h2><br>
+			<p> Contact no: +91 9676522836<br>Email: nikhilstark.3000@gamil.com</p>
+			<div class="icon" >
+				<h3 style="margin-left: 800pt;" id="user"> USER NAME : MARVEL HOST</h3>
+				<a href="account.html"><button type="button" style="margin-left: 850pt;"><span> </span>Log out</a></button><form action="/delete" method="get"><button id="delete" type="buton" style="margin-left:850pt"><span> </span>Delete</button></form>
+			</div>
+		</div>
+	</div>
+	<script>
+        // JavaScript code to display the user's name
+        document.addEventListener('DOMContentLoaded', function () {
+            const userNameDisplay = document.getElementById('user');
+			const urlParams = new URLSearchParams(window.location.search);
+            const userName = urlParams.get('name');// Replace with your templating engine's syntax to get the session variable
+
+            // Check if the user is logged in (if userName is set)
+            if (userName) {
+                userNameDisplay.textContent = `Welcome,${userName}!`;
+            }
+        });
+		/*document.addEventListener('DOMContentLoaded', function () {
+		const deleteUserButton = document.getElementById('delete');
+		deleteUserButton.addEventListener('click', function () {
+			// Confirm with the user before deleting
+			if (confirm('Are you sure you want to delete this user?')) {
+				// Send a request to the server to delete the user record
+				fetch('/delete', {
+					method: 'get',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						userId: document.getElementById('user') // Replace with the actual identifier
+					})
+				})
+				.then(response => {
+					if (response.ok) {
+						alert('User deleted successfully.');
+						window.location.href = '/account.html'; // Redirect to the home page or another appropriate page
+					} else {
+						alert('Failed to delete the user.');
+					}
+				})
+				.catch(error => {
+					console.error('Error:', error);
+					
+				});
+			}
+		});
+	});*/
+
+    </script>
+</body>
+</html>
